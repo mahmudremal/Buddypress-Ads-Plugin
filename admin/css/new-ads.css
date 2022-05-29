@@ -1,0 +1,41 @@
+.media.media-image {
+  position: relative;
+  max-width: 100%;
+}
+.media.media-image:before {
+  content: "";
+  position: absolute;
+  background: #333;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: .3s all;
+  opacity: 0.8;
+  visibility: visible;
+}
+
+
+/* [id$=ess] ID with ending "ess" */
+/* [id|=my] ID equal to "my" or starting with "my" followed by hypen "-" */
+/* [id^=L] ID with the start letter L */
+/* [id*=s] ID contains strign "s" */
+
+.mja-status a:after {
+  content: "|";
+  font-size: 15px;
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.mja-status:last-child a:after {
+  content: none;
+}
+#mjc_ads_param_type_media_video_tr img.video-preview_image {
+  display: block;
+  margin-top: 10px;
+  max-width: 350px;
+  max-height: 300px;
+}

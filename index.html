@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Youtube player testing</title>
+  <link href="public/css/plugin-name-public.css"></link>
+  <script>
+    const MJA_ADS_TIMING = 30.00;
+    const MJA_ADS_AUTOPLAY = true;
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    window.AdsIframeIds = [];
+  </script>
+  <script src="public/js/plugin-name-public.js"></script>
+</head>
+<body>
+  <div id="youtube_player" class="ads-video ads-youtube-video ads_iframe_youtube"></div>
+  <i class="bb-icon-pause ads-video-sound-switcher" data-toggled="off"></i>
+  <i class="bb-icon-volume-up ads-video-sound-switcher" data-toggled="off"></i>
+  <a class="ads_link_button" href="javascript:void(0);" data-href="https://www.youtube.com/watch?v=JO4mR6i6iZ0" onclick="return mja_ads_what_happend(this);" data-duration="100">Click here</a>
+  <script>iframe_loaded( 'JO4mR6i6iZ0', 'youtube_player');</script>
+</body>
+</html>

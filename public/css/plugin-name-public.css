@@ -1,0 +1,217 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .wb-ads-rotator.rich-content-ads {
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 0 !important;
+  line-height: normal;
+}
+#rich-ads {
+  display: none;
+}
+.activity-inner.media.media-richtext .mja-ads.mja-rich-content {
+  width: 100%;
+  height: 100%;
+  max-width: 635px;
+  max-height: 385px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+img.mja_ads_image {
+  min-width: 400px;
+  max-width: 100%;
+  width: 400px;
+  height: 350px;
+}
+.activity.activity-item .activity-content .activity-inner.media.media-richtext,
+.activity.activity-item .activity-content.image-activity-wrap .activity-inner.media.media-image {margin-bottom: 0;}
+.activity.activity-item .activity-content .activity-inner.media.media-richtext .activity-state.has-likes,
+.activity.activity-item .activity-content.image-activity-wrap .activity-inner.media.media-image .activity-state.has-likes {margin-top: 10px;}
+
+.activity-list .activity-item .bp-generic-meta.action .acomment-reply.bp-whatsapp.button:before {
+  content: "\e91b";
+  font-size: 18px;
+}
+
+
+
+
+
+
+.activity-content .media.media-video .ads-video::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.mja_ads_image_ovaraly:hover:after,
+.activity-content .media.media-video .ads-video.vjs-error::after,
+.activity-content .media.media-video .ads-video.visible::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--mja-ads-background-gradient);
+  opacity: 0.7 !important;
+  transition: 1.2s cubic-bezier(0.52, -0.18, 0.47, 1.11) all;
+  visibility: visible;
+}
+img.mja_ads_image + a,
+.activity-content.video-activity-wrap .activity-inner.media.media-video .ads_link_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: #333;
+  padding: 10px 20px 10px 20px;
+  z-index: 1;
+  margin: auto;
+  border-radius: 10px;
+  transition: 1.2s cubic-bezier(0.52, -0.18, 0.47, 1.11) all;
+  text-decoration: none;
+  display: none;
+  visibility: hidden;
+}
+.activity-content.video-activity-wrap .activity-inner.media.media-video .vjs-error ~ .ads_link_button,
+.activity-content.video-activity-wrap .activity-inner.media.media-video .visible ~ .ads_link_button {
+  display: block;
+  visibility: visible;
+}
+
+
+
+
+.mja_ads_image_ovaraly:hover a
+{
+  visibility: visible;
+  display: block;
+}
+
+.mja_ads_image_ovaraly {
+  width: 400px;
+  align-items: center;
+  vertical-align: middle;
+  align-self: center;
+  max-width: 400px;
+  background: #333;
+  position: relative;
+  display: inline-block;
+}
+.mja_ads_image_ovaraly:hover:after {
+  width: 400px;
+  top: 0;
+}
+
+
+
+
+
+/* Play Pause || Mute Unmute */
+.ads-video-sound-switcher {
+  padding: 10px;
+  background: #333;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  box-shadow: inset 0 0 5px #7a6969;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  transition: 1.3s ease-in-out auto;
+  cursor: pointer;
+  z-index: 1;display: none;
+  visibility: hidden;
+}
+.ads-video-sound-switcher:nth-child(3) {
+  left: 60px;
+}
+.ads-video-sound-switcher.insight {
+  display: block;
+  visibility: visible;
+}
+
+
+
+
+
+
+
+/* Pogress Bar Styles */
+/*
+.fluid-width-video-wrapper.ads-video:after {
+  content: "";
+  height: 5px;
+  width: 0%;
+  background: green;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#masthead-container.ytd-app:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 0;
+  background-image: red;
+  transition: 100s ease all;
+}
+#masthead-container.ytd-app.playing:after {
+  width: 100%;
+}
+.activity-list .activity-item .bp-generic-meta.action .ads_send-message.button:before {
+  display: inline-block;
+  text-rendering: auto;
+  font-size: 22px;
+  min-width: 22px;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  content: "\e80b";
+}
